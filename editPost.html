@@ -11,6 +11,36 @@
     <link href="assets/css/fontawesome.min.css" rel="stylesheet" />
 
     <title>MusUS - Edit Post</title>
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="assets/icons/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="assets/icons/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="assets/icons/favicon-16x16.png"
+  />
+  <link rel="manifest" href="assets/icons/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href="assets/icons/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#2b5797" />
+  <meta
+    name="msapplication-config"
+    content="assets/icons/browserconfig.xml"
+  />
+  <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <nav class="navbar navbar-light sticky-top bg-white">
@@ -27,6 +57,7 @@
 
       <!-- Login buttons -->
       <div>
+        <a href="dashboard.html" class="mr-3">Dashboard</a>
         <a href="upload.html" class="mr-3">Create post</a>
         <a href="profile.html" class="mr-3">Profile</a>
         <a href="login.html" class="mr-3">Login</a>
@@ -43,14 +74,12 @@
             <h1 class="text-center">Post</h1>
           </div>
         </div>
-        <div class="row">
-          <img
-            src="assets/img/forest.jpg"
-            class="img-fluid w-100"
-            alt="MusUS logo"
-          />
-        </div>
       </div>
+        <img
+        src="assets/img/forest.jpg"
+        class="img-fluid w-100"
+        alt="MusUS logo"
+      />
     </header>
 
     <section>
@@ -74,7 +103,7 @@
                 class="form-control"
                 id="pictureURL"
                 placeholder="http[s]://..."
-                value="http://127.0.0.1:5500/assets/img/mockup/snow.jpg"
+                value="http://127.0.0.1/assets/img/mockup/snow.jpg"
               />
             </div>
             <div class="form-group">
@@ -153,8 +182,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet tortor
     </footer>
 
     <!-- Javascript for Bootstrap-->
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/popper.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
   </body>
 </html>

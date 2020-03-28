@@ -12,6 +12,36 @@
     <!--load all styles -->
 
     <title>MusUS - Snow capped mountain</title>
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="assets/icons/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="assets/icons/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="assets/icons/favicon-16x16.png"
+  />
+  <link rel="manifest" href="assets/icons/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href="assets/icons/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#2b5797" />
+  <meta
+    name="msapplication-config"
+    content="assets/icons/browserconfig.xml"
+  />
+  <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <nav class="navbar navbar-light sticky-top bg-white">
@@ -28,6 +58,7 @@
 
       <!-- Login buttons -->
       <div>
+        <a href="dashboard.html" class="mr-3">Dashboard</a>
         <a href="upload.html" class="mr-3">Create post</a>
         <a href="profile.html" class="mr-3">Profile</a>
         <a href="login.html" class="mr-3">Login</a>
@@ -56,25 +87,49 @@
 
     <section>
       <div class="container">
-        <div class="row">
           <img
             src="assets/img/mockup/snow.jpg"
             class="img-fluid"
             alt="MusUS logo"
           />
-        </div>
 
         <!-- Post Data -->
         <div class="row">
-          <div class="col">
+          <!-- Small screens -->
+          <div class="col d-md-none">
+            <table class="table mb-0">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <div class="col">
+                  <td>
+                    <i class="far fa-calendar"></i>
+                    26/03/2020
+                  </td>
+                  <td class="text-center">
+                    <i class="far fa-edit"></i>
+                    <a href="editPost.html">Edit Post</a>
+                  </td>
+                  <td class="float-right">
+                    <i class="far fa-thumbs-up"></i>
+                    20 likes
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+            <!-- Big screens -->
+           <div class="col d-md-block d-none">
             <i class="far fa-calendar"></i>
             26/03/2020
           </div>
-          <div class="col text-center">
+          <div class="col text-center d-md-block d-none">
             <i class="far fa-edit"></i>
             <a href="editPost.html">Edit Post</a>
           </div>
-          <div class="col ">
+          <div class="col d-md-block d-none mb-2">
             <div class="float-right">
               <i class="far fa-thumbs-up"></i>
               20 likes
@@ -82,7 +137,7 @@
           </div>
         </div>
 
-        <div class="row mt-3">
+        <div class="row ml-1 mr-1">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
             aliquet tortor at felis condimentum, at laoreet purus laoreet. Nam
@@ -117,7 +172,8 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <!-- Big screens -->
+      <div class="container d-md-block d-none">
         <table class="table table-borderless">
           <tbody>
             <tr>
@@ -156,12 +212,53 @@
               <td>         
                 <div class="card">
                   <div class="card-body">
-                    Nice.
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                      aliquet tortor at felis condimentum, at laoreet purus laoreet. Nam
+                      tempor rhoncus cursus. Aenean nulla quam, tempor vitae risus at,
+                      maximus interdum leo. Nunc pharetra sed risus vitae suscipit.
+                      Vestibulum sit amet hendrerit urna.
+                    </p>
                   </div>
                 </div></td>
             </tr>
           </tbody>
         </table>
+        </div>
+      <!-- Small screens -->
+      <div class="container d-md-none">
+        <div class="row">
+          <div class="card w-100 ml-1 mr-1">
+            <div class="card-body">
+              <p>
+                Awesome view.
+              </p>
+              <div class="border-top my-1"></div>
+              <small class="text-muted">
+                @SnowMountain
+              </small>
+            </div>
+          </div>
+        </div>
+        <!-- Second comment -->
+        <div class="row mt-3">
+          <div class="card w-100 ml-1 mr-1">
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                aliquet tortor at felis condimentum, at laoreet purus laoreet. Nam
+                tempor rhoncus cursus. Aenean nulla quam, tempor vitae risus at,
+                maximus interdum leo. Nunc pharetra sed risus vitae suscipit.
+                Vestibulum sit amet hendrerit urna.
+              </p>
+              <div class="border-top my-1"></div>
+              <small class="text-muted">
+                @SpaceLover
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- New comment -->
       <div class="container">
@@ -208,8 +305,8 @@
     </footer>
 
     <!-- Javascript for Bootstrap-->
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/popper.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
   </body>
 </html>
